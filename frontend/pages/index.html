@@ -1,21 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>AURVO CLOUD PORTAL</title>
-<link rel="stylesheet" href="../assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURVO CLOUD PORTAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <h1>⚡ AURVO CLOUD PORTAL</h1>
-  <p>Accede a todas tus plataformas AURVO</p>
-  <div class="grid">
-    <a href="https://aurvoos.vercel.app" target="_blank">🖥️ AurvoOS</a>
-    <a href="https://aurvoai.vercel.app" target="_blank">🤖 AurvoAI</a>
-    <a href="https://aurvostudio.vercel.app" target="_blank">🎨 AurvoStudio</a>
-    <a href="https://aurvofinance.vercel.app" target="_blank">💰 AurvoFinance</a>
-    <a href="https://aurvocoredashboardpro.vercel.app" target="_blank">📊 AurvoDashboardPro</a>
-  </div>
-  <footer>© 2025 AURVO — Oro en Movimiento</footer>
+  <div class="nebula"></div>
+  <header class="top-bar">
+    <div class="logo">
+      <span class="spark"></span>
+      <span class="brand">AURVO</span>
+    </div>
+    <nav class="top-nav" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#ecosistema">Ecosistema</a>
+      <a href="#estado">Estado</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="cta" href="https://aurvocoredashboardpro.vercel.app" target="_blank" rel="noopener">Ingresar</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__copy">
+        <p class="hero__kicker">Escritorio centralizado</p>
+        <h1>Aurvo Cloud Portal</h1>
+        <p class="hero__lead">Unifica tus plataformas AURVO en un panel celestial: rápido, seguro y sincronizado en tiempo real.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://aurvoos.vercel.app" target="_blank" rel="noopener">Lanzar AurvoOS</a>
+          <a class="btn btn--ghost" href="#servicios">Explorar suite</a>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <span class="label">Usuarios activos</span>
+            <strong>24K</strong>
+          </div>
+          <div>
+            <span class="label">Tiempo de actividad</span>
+            <strong>99.982%</strong>
+          </div>
+          <div>
+            <span class="label">Zonas disponibles</span>
+            <strong>17</strong>
+          </div>
+        </div>
+      </div>
+      <div class="hero__preview" role="presentation">
+        <div class="orb"></div>
+        <div class="preview-card">
+          <h2>Panel en vivo</h2>
+          <ul>
+            <li>
+              <span class="bullet"></span>
+              Orquestación distribuida completada ✅
+            </li>
+            <li>
+              <span class="bullet"></span>
+              12 nuevas integraciones disponibles
+            </li>
+            <li>
+              <span class="bullet"></span>
+              Autenticación cuántica estable
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-links" id="servicios" aria-label="Accesos rápidos a servicios">
+      <article class="grid-card">
+        <h3>🖥️ AurvoOS</h3>
+        <p>Sistema operativo cloud con escritorios modulares y aplicaciones compartidas.</p>
+        <a href="https://aurvoos.vercel.app" target="_blank" rel="noopener">Abrir</a>
+      </article>
+      <article class="grid-card">
+        <h3>🤖 AurvoAI</h3>
+        <p>Modelos inteligentes para automatizar flujos y potenciar decisiones.</p>
+        <a href="https://aurvoai.vercel.app" target="_blank" rel="noopener">Abrir</a>
+      </article>
+      <article class="grid-card">
+        <h3>🎨 AurvoStudio</h3>
+        <p>Diseño colaborativo con edición en tiempo real y bibliotecas unificadas.</p>
+        <a href="https://aurvostudio.vercel.app" target="_blank" rel="noopener">Abrir</a>
+      </article>
+      <article class="grid-card">
+        <h3>💰 AurvoFinance</h3>
+        <p>Gestión financiera avanzada con analítica predictiva y reportes dinámicos.</p>
+        <a href="https://aurvofinance.vercel.app" target="_blank" rel="noopener">Abrir</a>
+      </article>
+      <article class="grid-card">
+        <h3>📊 AurvoDashboardPro</h3>
+        <p>Observabilidad total de KPIs, flujos y automatizaciones en tiempo real.</p>
+        <a href="https://aurvocoredashboardpro.vercel.app" target="_blank" rel="noopener">Abrir</a>
+      </article>
+    </section>
+
+    <section class="ecosystem" id="ecosistema">
+      <h2>Todo el ecosistema, sincronizado</h2>
+      <div class="ecosystem__grid">
+        <div class="ecosystem__item">
+          <span class="tag">Monitoreo</span>
+          <h3>Core Metrics</h3>
+          <p>Dashboards de latencia, rendimiento y energía en una vista unificada.</p>
+        </div>
+        <div class="ecosystem__item">
+          <span class="tag">Identidad</span>
+          <h3>Quantum ID</h3>
+          <p>Inicio de sesión multifactor con cifrado dinámico y verificación biométrica.</p>
+        </div>
+        <div class="ecosystem__item">
+          <span class="tag">Automatización</span>
+          <h3>Workflow Nexus</h3>
+          <p>Flujos drag & drop, alertas inteligentes y asistentes co-pilotados.</p>
+        </div>
+        <div class="ecosystem__item">
+          <span class="tag">Insights</span>
+          <h3>DataPulse</h3>
+          <p>Modelos de aprendizaje continuo para extraer patrones accionables.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="status" id="estado">
+      <div class="status__panel">
+        <div class="status__header">
+          <h2>Estado de la plataforma</h2>
+          <span class="status__badge status__badge--ok">Operativa</span>
+        </div>
+        <div class="status__grid">
+          <div class="status__metric">
+            <span class="label">AurvoOS</span>
+            <strong>✅ Sin incidentes</strong>
+          </div>
+          <div class="status__metric">
+            <span class="label">AurvoAI</span>
+            <strong>⚡ Ajustes menores</strong>
+          </div>
+          <div class="status__metric">
+            <span class="label">AurvoStudio</span>
+            <strong>✅ Estable</strong>
+          </div>
+          <div class="status__metric">
+            <span class="label">AurvoFinance</span>
+            <strong>✅ Estable</strong>
+          </div>
+          <div class="status__metric">
+            <span class="label">DashboardPro</span>
+            <strong>🛰️ Despliegue en curso</strong>
+          </div>
+        </div>
+      </div>
+      <div class="status__updates">
+        <h3>Novedades recientes</h3>
+        <ul>
+          <li>
+            <span class="dot"></span>
+            Integración con redes cuánticas completada.
+          </li>
+          <li>
+            <span class="dot"></span>
+            Se libera modo "Dark Nebula" para AurvoStudio.
+          </li>
+          <li>
+            <span class="dot"></span>
+            Nuevas políticas de compliance automatizadas.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-banner" aria-label="Llamado a la acción principal">
+      <div class="cta-banner__content">
+        <h2>Despliega tu universo AURVO en minutos</h2>
+        <p>Conecta equipos, proyectos y datos en un mismo portal de productividad.</p>
+      </div>
+      <a class="btn btn--primary" href="https://aurvocoredashboardpro.vercel.app" target="_blank" rel="noopener">Ir al panel</a>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div>
+        <h2>¿Necesitas ayuda?</h2>
+        <p>Nuestro equipo responde en menos de 5 minutos. Estamos listos para activar nuevas galaxias contigo.</p>
+      </div>
+      <form class="contact__form" action="https://formsubmit.co/support@aurvo.com" method="POST">
+        <label>
+          <span>Nombre</span>
+          <input type="text" name="name" placeholder="Tu nombre" required>
+        </label>
+        <label>
+          <span>Correo</span>
+          <input type="email" name="email" placeholder="correo@empresa.com" required>
+        </label>
+        <label>
+          <span>Mensaje</span>
+          <textarea name="message" rows="4" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--ghost">Contactar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>AURVO</strong>
+      <p>Oro en movimiento — Innovación sin gravedad.</p>
+    </div>
+    <div class="footer__links">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#ecosistema">Ecosistema</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <p class="footer__copy">© 2025 AURVO Cloud Portal. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
