@@ -69,6 +69,19 @@ NEXTAUTH_SECRET="tu_clave_secreta"
 AURVO_API_KEY="tu_api_key_hoc"
 VERCEL_PROJECT_ID="tu_project_id"
 
+📱 **Aplicación Android nativa**
+
+La carpeta [`android/`](android/) contiene una versión optimizada para dispositivos móviles del portal, construida con Kotlin y Jetpack Compose.
+
+```bash
+cd android
+gradle :app:assembleDebug
+```
+
+> Si utilizas Android Studio, el IDE configurará el Gradle Wrapper automáticamente al abrir el proyecto.
+
+El APK resultante quedará en `android/app/build/outputs/apk/debug/`. También puedes abrir la carpeta en Android Studio para emular o publicar la aplicación.
+
 
 ---
 
