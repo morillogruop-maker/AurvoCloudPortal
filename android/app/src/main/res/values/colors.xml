@@ -1,0 +1,8 @@
+<resources>
+    <color name="aurvo_space_night">#02030C</color>
+    <color name="aurvo_sun_flare">#FACC15</color>
+    <color name="aurvo_sun_flare_strong">#FBBF24</color>
+    <color name="aurvo_nebula">#38BDF8</color>
+    <color name="aurvo_text_primary">#F8FAFC</color>
+    <color name="aurvo_text_secondary">#C7D2FE</color>
+</resources>
