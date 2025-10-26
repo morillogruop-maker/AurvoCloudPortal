@@ -1,1 +1,1 @@
-# No custom rules required for now.
+# No additional rules required for now.

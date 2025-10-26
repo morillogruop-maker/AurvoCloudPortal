@@ -1,55 +1,48 @@
 package com.aurvo.cloudportal.ui.theme
 
+import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Brush
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.platform.LocalView
+import androidx.core.view.WindowCompat
 
-val DarkColorPalette = darkColorScheme(
-    primary = SolarGold,
-    secondary = AuroraCyan,
-    background = MidnightBlue,
-    surface = Color(0xFF0F172A),
-    surfaceVariant = NebulaOverlay,
-    onSurface = StarWhite,
-    onSurfaceVariant = Slate
+private val DarkColorScheme = darkColorScheme(
+    primary = SolarFlare,
+    onPrimary = Color(0xFF0F172A),
+    secondary = NebulaBlue,
+    onSecondary = Color(0xFF0F172A),
+    tertiary = AuroraPurple,
+    background = SpaceNight,
+    onBackground = StarWhite,
+    surface = DeepSpace,
+    onSurface = StarWhite
 )
-
-val LightColorPalette = lightColorScheme(
-    primary = SolarGold,
-    secondary = AuroraCyan,
-    background = StarWhite,
-    surface = Color(0xFFF1F5F9),
-    surfaceVariant = Color(0xFFE2E8F0),
-    onSurface = Color(0xFF0F172A),
-    onSurfaceVariant = Color(0xFF475569)
-)
-
-val GalacticBackground: Brush
-    get() = Brush.radialGradient(
-        colors = listOf(Color(0x330C4A6E), Color.Transparent),
-        radius = 900f
-    )
-
-val HeroGradient: Brush
-    get() = Brush.linearGradient(
-        colors = listOf(Color(0x33FDE68A), Color(0x1038BDF8))
-    )
 
 @Composable
 fun AurvoCloudPortalTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = if (darkTheme) DarkColorPalette else LightColorPalette
+    val colorScheme = DarkColorScheme
+    val view = LocalView.current
+    if (!view.isInEditMode) {
+        SideEffect {
+            val window = (view.context as Activity).window
+            WindowCompat.setDecorFitsSystemWindows(window, false)
+            window.statusBarColor = Color.Transparent.toArgb()
+            window.navigationBarColor = Color.Transparent.toArgb()
+        }
+    }
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = aurvoTypography,
-        shapes = aurvoShapes,
+        typography = Typography,
         content = content
     )
 }
